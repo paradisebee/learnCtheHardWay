@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <iostream.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    // go through each string in argv
+
+    int i = 0;
+    int num_of_args = sizeof(*argv) / sizeof(char);
+
+    cout << num_of_args << endl;
+    cout << sizeof(char) << endl;
+    cout << sizeof(argv) << endl;
+    //    printf("number of arguments is: %d\n", num_of_args);
+   /* char *states[] = {};
+    while (i < argc) {
+        states[i] = argv[i];
+        i++;
+    }*/
+
+    int num_states = 4;
+    i = 0; // watch for this
+    while(i < num_states) {
+      //  printf("state %d: %s\n", i, states[i]);
+        i++;
+    }
+
+    return 0;
+}
